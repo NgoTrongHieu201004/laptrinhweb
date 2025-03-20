@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .navbar {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        .navbar a {
+            text-decoration: none;
+            margin: 0 10px;
+            color: black;
+            font-weight: bold;
+        }
+        .register-container {
+            width: 350px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .register-container h2 {
+            margin-bottom: 20px;
+        }
+        .input-group {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .register-footer {
+            margin-top: 15px;
+        }
+        .register-footer a {
+            text-decoration: none;
+            color: blue;
+        }
+        .btn-register {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn-register:hover {
+            background-color: darkblue;
+        }
+        .footer {
+            margin-top: 50px;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#">Home</a> | 
+        <a href="#">Đăng nhập</a> | 
+        <a href="#"><b>Đăng ký</b></a>
+    </div>
+
+    <div class="register-container">
+        <h2>Màn hình đăng ký</h2>
+        <form>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Mật khẩu</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <label for="confirm-password">Nhập lại mật khẩu</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <button type="submit" class="btn-register">Đăng ký</button>
+        </form>
+        <div class="register-footer">
+            <a href="#">Đã có tài khoản</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        Lập trình web @01/2024
+    </div>
+
+</body>
+</html>

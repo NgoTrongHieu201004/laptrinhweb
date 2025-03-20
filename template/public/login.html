@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .navbar {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        .navbar a {
+            text-decoration: none;
+            margin: 0 10px;
+            color: black;
+            font-weight: bold;
+        }
+        .login-container {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+        .input-group {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .remember-me {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin: 10px 0;
+        }
+        .login-footer {
+            margin-top: 15px;
+        }
+        .login-footer a {
+            text-decoration: none;
+            color: blue;
+        }
+        .btn-login {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .btn-login:hover {
+            background-color: darkblue;
+        }
+        .footer {
+            margin-top: 50px;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#">Home</a> | 
+        <a href="#"><b>Đăng nhập</b></a> | 
+        <a href="register.html">Đăng ký</a>
+    </div>
+
+    <div class="login-container">
+        <h2>Màn hình đăng nhập</h2>
+        <form>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Mật khẩu</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="remember-me">
+                <input type="checkbox" id="remember">
+                <label for="remember">Ghi nhớ đăng nhập</label>
+            </div>
+            <button type="submit" class="btn-login">Đăng nhập</button>
+        </form>
+        <div class="login-footer">
+            <a href="#">Quên mật khẩu</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        Lập trình web @01/2024
+    </div>
+
+</body>
+</html>
